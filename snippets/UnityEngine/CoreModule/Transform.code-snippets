@@ -1,0 +1,249 @@
+{
+    // Properties
+    "Transform.childCount": {
+        "prefix": "childCount",
+        "body": "childCount",
+        "description": "The number of children the parent Transform has."
+    },
+    "Transform.eulerAngles": {
+        "prefix": "eulerAngles",
+        "body": "eulerAngles",
+        "description": "The rotation as Euler angles in degrees."
+    },
+    "Transform.forward": {
+        "prefix": "forward",
+        "body": "forward",
+        "description": "Returns a normalized vector representing the blue axis of the transform in world space."
+    },
+    "Transform.hasChanged": {
+        "prefix": "hasChanged",
+        "body": "hasChanged",
+        "description": "Has the transform changed since the last time the flag was set to 'false'?"
+    },
+    "Transform.hierarchyCapacity": {
+        "prefix": "hierarchyCapacity",
+        "body": "hierarchyCapacity",
+        "description": "The transform capacity of the transform's hierarchy data structure."
+    },
+    "Transform.hierarchyCount": {
+        "prefix": "hierarchyCount",
+        "body": "hierarchyCount",
+        "description": "The number of transforms in the transform's hierarchy data structure."
+    },
+    "Transform.localEulerAngles": {
+        "prefix": "localEulerAngles",
+        "body": "localEulerAngles",
+        "description": "The rotation as Euler angles in degrees relative to the parent transform's rotation."
+    },
+    "Transform.localPosition": {
+        "prefix": "localPosition",
+        "body": "localPosition",
+        "description": "Position of the transform relative to the parent transform."
+    },
+    "Transform.localRotation": {
+        "prefix": "localRotation",
+        "body": "localRotation",
+        "description": "The rotation of the transform relative to the transform rotation of the parent."
+    },
+    "Transform.localScale": {
+        "prefix": "localScale",
+        "body": "localScale",
+        "description": "The scale of the transform relative to the GameObjects parent."
+    },
+    "Transform.localToWorldMatrix": {
+        "prefix": "localToWorldMatrix",
+        "body": "localToWorldMatrix",
+        "description": "Matrix that transforms a point from local space into world space (Read Only)."
+    },
+    "Transform.lossyScale": {
+        "prefix": "lossyScale",
+        "body": "lossyScale",
+        "description": "The global scale of the object (Read Only)."
+    },
+    "Transform.parent": {
+        "prefix": "parent",
+        "body": "parent",
+        "description": "The parent of the transform."
+    },
+    "Transform.position": {
+        "prefix": "position",
+        "body": "position",
+        "description": "The world space position of the Transform."
+    },
+    "Transform.right": {
+        "prefix": "right",
+        "body": "right",
+        "description": "The red axis of the transform in world space."
+    },
+    "Transform.root": {
+        "prefix": "root",
+        "body": "root",
+        "description": "Returns the topmost transform in the hierarchy."
+    },
+    "Transform.rotation": {
+        "prefix": "rotation",
+        "body": "rotation",
+        "description": "A Quaternion that stores the rotation of the Transform in world space."
+    },
+    "Transform.up": {
+        "prefix": "up",
+        "body": "up",
+        "description": "The green axis of the transform in world space."
+    },
+    "Transform.worldToLocalMatrix": {
+        "prefix": "worldToLocalMatrix",
+        "body": "worldToLocalMatrix",
+        "description": "Matrix that transforms a point from world space into local space (Read Only)."
+    },
+    // Public Methods
+    "Transform.DetachChildren": {
+        "prefix": "DetachChildren()",
+        "body": "DetachChildren()",
+        "description": "Unparents all children."
+    },
+    "Transform.Find": {
+        "prefix": "Find(string n)",
+        "body": "Find(${1:string n})",
+        "description": "Finds a child by name `n` and returns it."
+    },
+    "Transform.GetChild": {
+        "prefix": "GetChild(int index)",
+        "body": "GetChild(${1:int index})",
+        "description": "Returns a transform child by index."
+    },
+    "Transform.GetLocalPositionAndRotation": {
+        "prefix": "GetLocalPositionAndRotation(out Vector3 localPosition, out Quaternion localRotation)",
+        "body": "GetLocalPositionAndRotation(${1:out Vector3 localPosition}, ${2:out Quaternion localRotation})",
+        "description": "Gets the position and rotation of the Transform component in local space (that is, relative to its parent transform)."
+    },
+    "Transform.GetPositionAndRotation": {
+        "prefix": "GetPositionAndRotation(out Vector3 position, out Quaternion rotation)",
+        "body": "GetPositionAndRotation(${1:out Vector3 position}, ${2:out Quaternion rotation})",
+        "description": "Gets the position and rotation of the Transform component in world space."
+    },
+    "Transform.GetSiblingIndex": {
+        "prefix": "GetSiblingIndex()",
+        "body": "GetSiblingIndex()",
+        "description": "Gets the sibling index."
+    },
+    "Transform.InverseTransformDirection": {
+        "prefix": "InverseTransformDirection(Vector3 direction)",
+        "body": "InverseTransformDirection(${1:Vector3 direction})",
+        "description": "Transforms a `direction` from world space to local space. The opposite of Transform.TransformDirection."
+    },
+    "Transform.InverseTransformPoint": {
+        "prefix": "InverseTransformPoint(Vector3 position)",
+        "body": "InverseTransformPoint(${1:Vector3 position})",
+        "description": "Transforms `position` from world space to local space."
+    },
+    "Transform.InverseTransformVector": {
+        "prefix": "InverseTransformVector(Vector3 vector)",
+        "body": "InverseTransformVector(${1:Vector3 vector})",
+        "description": "Transforms a `vector` from world space to local space. The opposite of Transform.TransformVector."
+    },
+    "Transform.IsChildOf": {
+        "prefix": "IsChildOf(Transform parent)",
+        "body": "IsChildOf(${1:Transform parent})",
+        "description": "Is this transform a child of `parent`?"
+    },
+    "Transform.LookAt1": {
+        "prefix": "LookAt(Transform target, Vector3 worldUp = Vector3.up)",
+        "body": "LookAt(${1:Transform target}, ${2:Vector3 worldUp = Vector3.up})",
+        "description": "Rotates the transform so the forward vector points at `target`'s current position."
+    },
+    "Transform.LookAt2": {
+        "prefix": "LookAt(Vector3 worldPosition, Vector3 worldUp = Vector3.up)",
+        "body": "LookAt(${1:Vector3 worldPosition}, ${2:Vector3 worldUp = Vector3.up})",
+        "description": "Rotates the transform so the forward vector points at `worldPosition`."
+    },
+    "Transform.Rotate1": {
+        "prefix": "Rotate(Vector3 eulars)",
+        "body": "Rotate(${1:Vector3 eulars})",
+        "description": "Applies a rotation of eulerAngles.z degrees around the z-axis, eulerAngles.x degrees around the x-axis, and eulerAngles.y degrees around the y-axis (in that order)."
+    },
+    "Transform.Rotate2": {
+        "prefix": "Rotate(float xAngle}, float yAngle, float zAngle)",
+        "body": "Rotate(${1:float xAngle}, ${2:float yAngle}, ${3:float zAngle})",
+        "description": "The implementation of this method applies a rotation of `zAngle` degrees around the z axis, `xAngle` degrees around the x axis, and `yAngle` degrees around the y axis (in that order)."
+    },
+    "Transform.Rotate3": {
+        "prefix": "Rotate(float xAngle}, float yAngle, float zAngle)",
+        "body": "Rotate(${1:Vector3 axis}, ${2:float angle})",
+        "description": "Rotates the object around the given axis by the number of degrees defined by the given angle."
+    },
+    "Transform.Rotate4": {
+        "prefix": "Rotate(Vector3 eulars, Space relativeTo = Space.Self)",
+        "body": "Rotate(${1:Vector3 eulars}, ${2:Space relativeTo = Space.Self})",
+        "description": "Applies a rotation of eulerAngles.z degrees around the z-axis, eulerAngles.x degrees around the x-axis, and eulerAngles.y degrees around the y-axis (in that order)."
+    },
+    "Transform.Rotate5": {
+        "prefix": "Rotate(float xAngle}, float yAngle, float zAngle, Space relativeTo = Space.Self)",
+        "body": "Rotate(${1:float xAngle}, ${2:float yAngle}, ${3:float zAngle}, ${4:Space relativeTo = Space.Self})",
+        "description": "The implementation of this method applies a rotation of `zAngle` degrees around the z axis, `xAngle` degrees around the x axis, and `yAngle` degrees around the y axis (in that order)."
+    },
+    "Transform.Rotate6": {
+        "prefix": "Rotate(float xAngle}, float yAngle, float zAngle, Space relativeTo = Space.Self)",
+        "body": "Rotate(${1:Vector3 axis}, ${2:float angle}, ${3:Space relativeTo = Space.Self})",
+        "description": "Rotates the object around the given axis by the number of degrees defined by the given angle."
+    },
+    "Transform.RotateAround": {
+        "prefix": "RotateAround(Vector3 point, Vector3 axis, float angle)",
+        "body": "RotateAround(${1:Vector3 point}, ${2:Vector3 axis}, ${3:float angle})",
+        "description": "Rotates the transform about `axis` passing through `point in world coordinates by `angle` degrees."
+    },
+    "Transform.SetAsFirstSibling": {
+        "prefix": "SetAsFirstSibling()",
+        "body": "SetAsFirstSibling()",
+        "description": "Move the transform to the start of the local transform list."
+    },
+    "Transform.SetAsLastSibling": {
+        "prefix": "SetAsLastSibling()",
+        "body": "SetAsLastSibling()",
+        "description": "Move the transform to the end of the local transform list."
+    },
+    "Transform.SetLocalPositionAndRotation": {
+        "prefix": "SetLocalPositionAndRotation(Vector3 localPosition, Quaternion localRotation)",
+        "body": "SetLocalPositionAndRotation(${1:Vector3 localPosition}, ${2:Quaternion localRotation})",
+        "description": "Sets the position and rotation of the Transform component in local space (i.e. relative to its parent transform)."
+    },
+    "Transform.SetParent1": {
+        "prefix": "SetParent(Transform p);",
+        "body": "SetParent(${1:Transform p});",
+        "description": "Set the parent of the transform."
+    },
+    "Transform.SetParent2": {
+        "prefix": "SetParent(Transform parent, bool worldPositionStays);",
+        "body": "SetParent(${1:Transform parent}, ${2:bool worldPositionStays});",
+        "description": "Set the parent of the transform."
+    },
+    "Transform.SetPositionAndRotation": {
+        "prefix": "SetPositionAndRotation(Vector3 position, rotation);",
+        "body": "SetPositionAndRotation(${1:Vector3 position}, ${2:rotation});",
+        "description": "Sets the world space position and rotation of the Transform component."
+    },
+    "Transform.SetSiblingIndex": {
+        "prefix": "SetSiblingIndex(int index)",
+        "body": "SetSiblingIndex(${1:int index})",
+        "description": "Sets the sibling index."
+    },
+    "Transform.TransformDirection": {
+        "prefix": "TransformDirection(Vector3 direction)",
+        "body": "TransformDirection(${1:Vector3 direction})",
+        "description": "Transforms direction from local space to world space."
+    },
+    "Transform.TransformPoint": {
+        "prefix": "TransformPoint(Vector3 position)",
+        "body": "TransformPoint(${1:Vector3 position})",
+        "description": "Transforms position from local space to world space."
+    },
+    "Transform.TransformVector": {
+        "prefix": "TransformVector(Vector3 vector)",
+        "body": "TransformVector(${1:Vector3 vector})",
+        "description": "Transforms vector from local space to world space."
+    },
+    "Transform.Translate": {
+        "prefix": "Translate(Vector3 translation)",
+        "body": "Translate(${1:Vector3 translation})",
+        "description": "Moves the transform in the direction and distance of translation."
+    },
+}

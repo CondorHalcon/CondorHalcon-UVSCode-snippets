@@ -1,0 +1,55 @@
+{
+    // Properties
+    "RectTransform.anchoredPosition": {
+        "prefix": "anchoredPosition",
+        "body": "anchoredPosition",
+        "description": "The position of the pivot of this RectTransform relative to the anchor reference point."
+    },
+    "RectTransform.anchoredPosition3D": {
+        "prefix": "anchoredPosition3D",
+        "body": "anchoredPosition3D",
+        "description": "The 3D position of the pivot of this RectTransform relative to the anchor reference point."
+    },
+    "RectTransform.anchorMax": {
+        "prefix": "anchorMax",
+        "body": "anchorMax",
+        "description": "The normalized position in the parent RectTransform that the upper right corner is anchored to."
+    },
+    "RectTransform.anchorMin": {
+        "prefix": "anchorMin",
+        "body": "anchorMin",
+        "description": "The normalized position in the parent RectTransform that the lower left corner is anchored to."
+    },
+    "RectTransform.drivenByObject": {
+        "prefix": "drivenByObject",
+        "body": "drivenByObject",
+        "description": "The object that is driving the values of this RectTransform. Value is null if not driven."
+    },
+    "RectTransform.offsetMax": {
+        "prefix": "offsetMax",
+        "body": "offsetMax",
+        "description": "The offset of the upper right corner of the rectangle relative to the upper right anchor."
+    },
+    "RectTransform.offsetMin": {
+        "prefix": "offsetMin",
+        "body": "offsetMin",
+        "description": "The offset of the lower left corner of the rectangle relative to the lower left anchor."
+    },
+    "RectTransform.pivot": {
+        "prefix": "pivot",
+        "body": "pivot",
+        "description": "The normalized position in this RectTransform that it rotates around."
+    },
+    "RectTransform.rect": {
+        "prefix": "rect",
+        "body": "rect",
+        "description": "The calculated rectangle in the local space of the Transform."
+    },
+    "RectTransform.sizeDelta": {
+        "prefix": "sizeDelta",
+        "body": "sizeDelta",
+        "description": "The size of this RectTransform relative to the distances between the anchors."
+    },
+    // Public Methods
+    
+}
